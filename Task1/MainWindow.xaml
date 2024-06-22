@@ -1,0 +1,41 @@
+﻿<Window x:Class="Task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Cursor="">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        <Rectangle x:Name="Cookie" Grid.RowSpan="2" Cursor="Hand">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/1.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Grid.Column="1" Cursor="Hand" x:Name="GrandmotherRectangle" MouseDown="GrandmotherRectangle_MouseDown">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/2.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Score:"/>
+            <Label x:Name="ScoreLabel"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Grandmothers:"/>
+            <Label x:Name="GrandmothersLabel"/>
+            </StackPanel>
+        </StackPanel>
+        <Ellipse x:Name="CookieEllipse" Margin="97,63,88,85" Grid.RowSpan="2" MouseDown="CookieEllipse_MouseDown" Fill="Black" Opacity="0"/>
+    </Grid>
+</Window>

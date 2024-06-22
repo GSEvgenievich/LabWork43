@@ -1,0 +1,22 @@
+﻿<Window x:Class="Task2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF5B7A9C" Offset="0.003"/>
+                <GradientStop Color="#FF522B03" Offset="1"/>
+                <GradientStop Color="#FF6B461F" Offset="0.922"/>
+                <GradientStop Color="#FF488626" Offset="0.805"/>
+                <GradientStop Color="#FF1B3C60" Offset="0.658"/>
+                <GradientStop Color="#FF10440E" Offset="0.724"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Canvas x:Name="gameCanvas"/>
+    </Grid>
+</Window>

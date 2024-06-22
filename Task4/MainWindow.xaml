@@ -1,0 +1,29 @@
+﻿<Window x:Class="Task4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/100_stars.jpg" />
+        </Grid.Background>
+
+        <Canvas x:Name="gameCanvas">
+            <Rectangle x:Name="spaceship" Height="110" Canvas.Left="350" Canvas.Top="314" Width="100" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/spaceship.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label Foreground="White" Content="Score:" Canvas.Left="10" Canvas.Top="374" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="scoreLabel" Foreground="White" Canvas.Left="78" Canvas.Top="374" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Foreground="White" Content="Lives:" Canvas.Left="702" Canvas.Top="374" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="livesLabel" Foreground="White" Canvas.Left="759" Canvas.Top="374" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="goLabel" Foreground="White" Content="LET'S GO!!!" Canvas.Left="236" Canvas.Top="168" FontSize="66" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label x:Name="endLabel" Foreground="DarkRed" Content="GAME OVER" FontWeight="Bold" Canvas.Left="204" Canvas.Top="168" FontSize="66" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        </Canvas>
+    </Grid>
+</Window>
